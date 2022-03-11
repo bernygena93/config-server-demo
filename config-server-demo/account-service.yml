@@ -1,0 +1,21 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: account-service
+  cloud:
+    config:
+      enabled: false
+management:
+  endpoint:
+    healt:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  info:
+    env:
+      enabled: true
+
+message: "default configuration"
